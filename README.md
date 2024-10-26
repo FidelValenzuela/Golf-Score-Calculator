@@ -34,4 +34,3 @@ The function can be exported for use in other modules:
 ```javascript
 module.exports = golfScore;
 ```
-```
