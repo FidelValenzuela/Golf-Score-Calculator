@@ -1,20 +1,21 @@
-function checkGolfScore(par, strokes) {
-    if (strokes == 1)
+function golfScore(par, strokes) {
+    if (strokes == 1) {
         return 'Hole-in-one!';
-    else if (strokes <= par - 3)
+    } else if (strokes <= par - 3) {
         return 'Double Eagle or better'; // Three under par
-    else if (strokes == par - 2)
+    } else if (strokes == par - 2) {
         return 'Eagle'; // Two under par
-    else if (strokes == par - 1)
+    } else if (strokes == par - 1) {
         return 'Birdie'; // One under par
-    else if (strokes == par)
+    } else if (strokes == par) {
         return 'Par'; // Equal to par
-    else if (strokes == par + 1)
+    } else if (strokes == par + 1) {
         return 'Bogey'; // One over par
-    else if (strokes == par + 2)
+    } else if (strokes == par + 2) {
         return 'Double Bogey'; // Two over par
-    else if (strokes >= par + 3)
+    } else {
         return 'Go Home!'; // Three or more over par
+    }
 }
 
 function checkGolfScore() {
