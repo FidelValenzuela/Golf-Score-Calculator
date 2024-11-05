@@ -3,11 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Golf Score</title>
+    <title>Golf Score Checker</title>
 </head>
 <body>
     <h1>Golf Score Checker</h1>
-    <p>Open your browser’s console to see the output of the golfScore function.</p>
+    <p>Enter the par and strokes to see your golf score result.</p>
+
+    <label for="par">Par:</label>
+    <input type="number" id="par" name="par" min="1" required>
+
+    <label for="strokes">Strokes:</label>
+    <input type="number" id="strokes" name="strokes" min="1" required>
+
+    <button onclick="checkGolfScore()">Check Score</button>
+
+    <p id="result"></p>
+
+    <!-- Link to the external JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
