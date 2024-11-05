@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golf Score Checker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Golf Score Checker</h1>
-    <p>Enter the par and strokes to see your golf score result.</p>
+    <div class="container">
+        <h1>Golf Score Checker</h1>
+        <p class="description">Enter the par and strokes to see your golf score result.</p>
 
-    <label for="par">Par:</label>
-    <input type="number" id="par" name="par" min="1" required>
+        <div class="input-group">
+            <label for="par">Par:</label>
+            <input type="number" id="par" name="par" min="1" required>
+        </div>
 
-    <label for="strokes">Strokes:</label>
-    <input type="number" id="strokes" name="strokes" min="1" required>
+        <div class="input-group">
+            <label for="strokes">Strokes:</label>
+            <input type="number" id="strokes" name="strokes" min="1" required>
+        </div>
 
-    <button onclick="checkGolfScore()">Check Score</button>
+        <button onclick="checkGolfScore()" class="btn">Check Score</button>
 
-    <p id="result"></p>
+        <p id="result" class="result"></p>
+    </div>
 
     <!-- Link to the external JavaScript file -->
     <script src="script.js"></script>
