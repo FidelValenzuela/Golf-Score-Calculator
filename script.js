@@ -1,4 +1,4 @@
-function golfScore(par, strokes) {
+function checkGolfScore(par, strokes) {
     if (strokes == 1)
         return 'Hole-in-one!';
     else if (strokes <= par - 3)
