@@ -1,36 +1,63 @@
 ```markdown
-# Golf Score Calculator
+# Golf Score Checker
 
-This JavaScript function calculates golf scores based on the par and number of strokes.
+A simple web application to help golfers determine their score based on the par and strokes for each hole. This project demonstrates basic HTML, CSS, and JavaScript usage for building a user-friendly tool.
 
-## Description
+## Table of Contents
+- [Demo](#demo)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-The `golfScore` function returns a description of the score based on these rules:
+## Demo
+You can view a live version of the project [here](https://fidelvalenzuela.github.io/Golf-Score-Calculator/).
 
-- **Hole-in-one!**: `strokesfor` is 1
-- **Double Eagle or better**: `strokesfor` is three or more under `par`
-- **Eagle**: `strokesfor` is two under `par`
-- **Birdie**: `strokesfor` is one under `par`
-- **Par**: `strokesfor` equals `par`
-- **Bogey**: `strokesfor` is one over `par`
-- **Double Bogey**: `strokesfor` is two over `par`
-- **Go Home!**: `strokesfor` is three or more over `par`
+## Features
+- Input fields for par and strokes.
+- A button to check and display the golf score result.
+- Stylish, modern UI with a responsive design.
+- User feedback based on the golf score (e.g., Hole-in-one, Birdie, Bogey, etc.).
+
+## Installation
+To run this project locally:
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/fidelvalenzuela/Golf-Score-Calculator.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd Golf-Score-Calculator
+    ```
+3. Open `index.html` in your browser.
+
+Alternatively, you can view it on [GitHub Pages](https://fidelvalenzuela.github.io/Golf-Score-Calculator/) for easy access.
 
 ## Usage
+1. Open the application in a web browser.
+2. Enter values for the **Par** (expected strokes) and **Strokes** (actual strokes taken).
+3. Click the **Check Score** button to see your result.
+4. The application will display the golf score result (e.g., "Hole-in-one", "Bogey") based on the input values.
 
-Call the function with `par` and `strokesfor` values:
-
-```javascript
-console.log(golfScore(5, 1)); // Hole-in-one!
-console.log(golfScore(5, 3)); // Eagle
-console.log(golfScore(5, 5)); // Par
-console.log(golfScore(5, 8)); // Go Home!
+## Project Structure
+```
+Golf-Score-Calculator/
+├── index.html       # Main HTML file
+├── styles.css       # CSS file for styling
+└── script.js        # JavaScript file for functionality
 ```
 
-## Export
+## Technologies Used
+- **HTML** - Structure of the web page.
+- **CSS** - Styling for a modern and clean look.
+- **JavaScript** - Handles the logic for calculating and displaying the golf score.
 
-The function can be exported for use in other modules:
+## Contributing
+Contributions are welcome! Feel free to submit a pull request or open an issue to improve the project.
 
-```javascript
-module.exports = golfScore;
+## License
+This project is open-source and available under the MIT License.
 ```
